@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    body{
+      background-size: cover;
+    }
+    .shade{
+      background-color: rgb(0, 0,0,0.2);
+      height: 100vh;
+      width: 100vw;
+      margin: -8px;
+    }
+    header{
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      text-align: center;
+    }
+    .head-sub{
+      margin: 20px 20px;
+    }
+    .title-heading{
+      color: red;
+      font-weight: bold;
+    }
+    .signin-button{
+      background-color: red;
+      color: white;
+      padding: 5px;
+      font-size: 20px;
+      border-radius: 2px;
+    }
+    div span{
+      font-size: 20px;
+      padding-top: 80px;
+    }
+    .bi-chevron-down{
+      font-size: 12px;
+    }
+    section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10%;
+    }
+    .main-content{
+      font-weight: bold;
+      font-size: 50px;
+      margin: -10px;
+      color: white;
+    }
+    .simple-text{
+      font-size: 20px;
+      margin: 20px;
+      color: white;
+    }
+    .bold-text{
+      color: white;
+      font-weight: bold;
+    }
+    .login-line{
+      display: flex;
+    }
+    .email{
+      padding: 15px;
+      background-color: rgb(255, 255, 255);
+      color: rgba(0, 0, 0, 0.671);
+      width: 380px;
+    }
+    .get-started{
+      background-color: red;
+      width: 140px;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body background="../public/images/banner.jpg">
+  <div class="shade">
+    <header>
+      <div class="head-sub">
+        <div class="title-heading">NETFLIX</div>
+      </div>
+      <div class="head-sub">
+        <span class="bi bi-globe"></span>
+        <span>Language</span>
+        <span class="bi bi-chevron-down"></span>
+        <span class="signin-button">Sign In</span>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="main-content">Unlimited movies, TV shows,</div>
+          <div class="main-content">and more</div>
+          <div class="simple-text">Watch anywhere. Cancel anytime.</div>
+          <div class="bold-text">Ready to watch? Enter your email to create or restart your membership.</div>
+          <div class="login-line"><span class="email">Email</span><span class="get-started">Get Started</span></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
+
+</body>
+</html>

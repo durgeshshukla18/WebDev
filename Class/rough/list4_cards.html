@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        dt{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            width: 100px;
+        }
+        dd{
+            background-color: grey;
+            color: black;
+            margin-bottom: 5px;
+            width: 120px;
+            padding: 5px;
+        }
+        fieldset{
+            margin-bottom: 20px;
+            /* background-image: url(../rough/public/images/banner.jpg);
+            background-size: cover; */
+            border-radius: 5px;
+            width: 500px;
+            box-shadow: 5px 5px 5px red;
+        }
+        legend{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px yellow;
+        }
+        .personaldetails{
+            background-image: url(../rough/public/images/banner.jpg);
+            background-size: cover;
+        }
+        .contactdetails{
+            background-image: url(../rough/public/images/contact.jpeg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <fieldset class="personaldetails">
+            <legend>Personal Details</legend>
+            <dl>
+                <dt>FirstName</dt>
+                <dd>SomeName</dd>
+
+                <dt>LastName</dt>
+                <dd>SomeName</dd>
+
+                <dt>Age</dt>
+                <dd>SomeAge</dd>
+            </dl>
+        </fieldset>
+
+        <fieldset class="contactdetails">
+            <legend>Contact Details</legend>
+            <dl>
+                <dt>City</dt>
+                <dd>SomeCity</dd>
+
+                <dt>State</dt>
+                <dd>SomeState</dd>
+
+                <dt>PostalCode</dt>
+                <dd>Somepostalcode</dd>
+            </dl>
+        </fieldset>
+
+    </nav>
+</body>
+</html>
