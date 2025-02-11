@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    header{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .menu-bar{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .search-container{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .search-bar{
+      width: 300px;
+      border: 2px solid;
+      border-radius: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    .bi-mic-fill{
+      background-color: rgb(209, 202, 202);
+      border-radius: 50px;
+      padding: 5px;
+    }
+    .notification{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile{
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(8, 247, 255);
+      border-radius: 100%;
+      padding: 10px;
+    }
+    section{
+      display: grid;
+      grid-template-columns: 2fr 10fr;
+      gap: 30px;
+
+    }
+    ul{
+      list-style: none;
+     
+    }
+    nav{
+      margin-left: -30px;
+      width: 230px;
+      height: 100vh;
+    }
+    nav:hover{
+      overflow: scroll;
+      width: 230px;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+    li{
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+    li span{
+      margin-right: 5px;
+    }
+    article{
+      display: grid;
+      grid-template-columns: 3fr 9fr;
+      gap: 10px;
+      margin-top: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    article div{
+      margin-bottom: 10px;
+    }
+    .logo{
+      border-radius: 100px;
+    }
+    main{
+      padding-right: 50px;
+    }
+    main img{
+      border-radius: 20px;
+    }
+    .channel-heading{
+      font-size: 33px;
+      font-weight: bold;
+    }
+    .channel-info{
+      color: gray;
+      font-size: 13px;
+    }
+    a{
+      font-size: 13px;
+      text-decoration: none;
+      color: gray;
+    }
+    a span{
+      font-weight: bold;
+      color: black;
+    }
+    .blue{
+      color: blue;
+    }
+    .subscribe-btn{
+      background: black;
+      color: white;
+      width: 120px;
+      text-align: center;
+      border-radius: 30px;
+      font-weight: 500;
+      padding: 5px;
+    }
+    .channel-nav{
+      
+      margin-top: 10px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: gray;
+      border-bottom: 1px solid;
+      padding: 10px;
+    }
+    .channel-nav span{
+      margin-right: 10px;
+      padding: 10px;
+    }
+    .channel-nav span:hover{
+      padding: 10px;
+      border-bottom: 2px solid;
+    }
+    .home{
+      color: black;
+      border-bottom: 2px solid;
+    }
+    .card{
+      height: 300px;
+      width: 300px;
+      padding: 10px;
+      line-height: 20px;
+    }
+    .card-img img{
+      width: 300px;
+    }
+    .card-info{
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-disc{
+      color: gray;
+      font-size: 15px;
+    }
+  
+    .card-container{
+      display: flex;
+    }
+    hr{
+      width: 170px;
+    }
+    h3{
+      margin-left: 37px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <span class="bi bi-list"></span>
+      <span><img src="../rough/public/images/youtube_home_icon.png" alt="" height="30px"></span>
+    </div>
+    <div class="search-container">
+      <div class="search-bar">
+        <span>Search</span>
+        <span class="bi bi-search"></span>
+      </div>
+      <span class="bi bi-mic-fill"></span>
+    </div>
+    <div class="notification">
+      <span class="bi bi-camera-video"></span>
+      <span class="bi bi-bell"></span>
+      <span class="profile">A</span>
+    </div>
+  </header>
+    <section>
+      <nav>
+        <ul>
+          <li><span class="bi bi-house"></span>Home</li>
+          <li><span class="bi bi-play-circle-fill"></span>Shorts</li>
+          <li><span class="bi bi-collection-play"></span>Subscriptions</li>
+        </ul>
+        <hr>
+        <h3>You <span class="bi bi-chevron-right"></span></h3>
+        <ul>
+          <li> <span class="bi bi-people-fill"></span>Your channel</li>
+          <li> <span class="bi bi-clock-history"></span>History</li>
+          <li><span class="bi bi-music-note-list"></span>Playlists</li>
+          <li><span class="bi bi-file-play"></span>Your videos</li>
+          <li> <span class="bi bi-clock"></span>Watch later</li>
+          <li> <span class="bi bi-hand-thumbs-up"></span>Liked videos</li>
+        </ul>
+        <hr>
+        <ul>
+          <li> <span class="bi bi-people-fill"></span>Your channel</li>
+          <li> <span class="bi bi-clock-history"></span>History</li>
+          <li><span class="bi bi-music-note-list"></span>Playlists</li>
+          <li><span class="bi bi-file-play"></span>Your videos</li>
+          <li> <span class="bi bi-clock"></span>Watch later</li>
+          <li> <span class="bi bi-hand-thumbs-up"></span>Liked videos</li>
+        </ul>
+      </nav>
+      <main>
+        <img src="../rough/public/images/pwioi_youtube_banner.jpg" alt="" width="1000px">
+        <article>
+          <div class="logo-img"><img class="logo" src="../rough/public/images/IOI_channel_profile.jpg" alt=""></div>
+          <div class="article-content">
+            <div class="channel-heading">PW Institute of Innovation</div>
+            <div class="channel-info">@PW-IOI • 7.27K subscribers • 159 videos</div>
+            <div ><a href="">Shaping Futures, Empowering Innovators! 🚀<span>...more</span></a></div>
+            <div><a class="blue" href="">pwioi.com/?utm_source=Youtube&utm_medium=Social&utm_campaign=Organic
+              <span>and 8 more links</span></a></div>
+              <div class="subscribe-btn">Subscribe</div>
+          </div>
+          
+        </article>
+        <div class="channel-nav">
+          <span class="home">Home</span>
+          <span>Videos</span>
+          <span>Shorts</span>
+          <span>Playlists</span>
+          <span>Community</span>
+          <span class="bi bi-search"></span>
+        </div>
+        <div class="heading"><h2>For you</h2></div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img"><img src="../rough/public/images/Ioi_vid_1.png" alt=""></div>
+            <div class="card-info"><span>What Is PW IOI ?</span><span class="bi bi-three-dots-vertical"></span></div>
+            <div class="card-disc">
+              23K views • 3 months ago</div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="../rough/public/images/Ioi_vid_2.png" alt=""></div>
+            <div class="card-info"><span>PW TeacW Teachers Motivating PW IOI Students | Path to Success 🤩✌🏻</span><span class="bi bi-three-dots-vertical"></span></div>
+            <div class="card-disc">
+              17K views • 4 months ago </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="../rough/public/images/Ioi_vid_3.png" alt=""></div>
+            <div class="card-info"><span>
+              Future and Fusion Event | Vishwas Day Celebration at PW IOI
+              </span><span class="bi bi-three-dots-vertical"></span></div>
+            <div class="card-disc">1.4K views 5 months ago</div>
+          </div>
+        </div>
+      </main>
+    </section>
+ 
+    
+    
+</body>
+</html>

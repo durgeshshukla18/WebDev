@@ -44,7 +44,9 @@
         padding: 10px;
       }
       section{
-        height: 250px;
+        /* height: 250px; */
+        margin-bottom: 20px;
+        margin-top: 20px;
       }
       footer{
         background-color: black;
@@ -63,6 +65,60 @@
       .footer-title{
         font-size: larger;
         font-weight: bold;
+      }
+      main{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        height: 400px;
+        grid-gap: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+      .womenfashion{
+        background-image: url(../public/images/women_cover.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* opacity: 0.5; */
+      }
+      .menfashion{
+        background-image: url(../public/images/men_cover.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .kidsfashion{
+        background-image: url(../public/images/kids_cover.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-header{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+        /* text-shadow: ; */
+        /* align-items: center;
+        justify-content: center; */
+      }
+      button{
+        padding: 10px;
+        background-color: white;
+        position: fixed;
+        margin-top: 80px;
+        border: none;
+      }
+      .womenfashion:hover{
+        opacity: 0.5;
+      }
+      .menfashion:hover{
+        opacity: 0.5;
+      }
+      .kidsfashion:hover{
+        opacity: 0.5;
       }
     </style>
   </head>
@@ -95,9 +151,48 @@
       <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
       <span class="bi bi-lightning-charge-fill"></span>
     </article>
+
     <section>
+      <main>
+        <div class="womenfashion">
+          <div class="card">
+              <div class="card-header">
+                  Women
+              </div>
+              <div class="card-footer">
+                  <button>Shop Women <span class="bi bi-arrow-right"></span></button>
+              </div>
+          </div>
+          
+      </div>
+
+      <div class="menfashion">
+          <div class="card">
+              <div class="card-header">
+                  Men
+              </div>
+              <div class="card-footer">
+                  <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+              </div>
+          </div>
+
+      </div>
+
+      <div class="kidsfashion">
+          <div class="card">
+              <div class="card-header">
+                  Kids
+              </div>
+              <div class="card-footer">
+                  <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+              </div>
+          </div>
+
+      </div>
+      </main>
 
     </section>
+
     <footer>
       <!-- <div>Want Style Ideas and Treats?</div>
       <div>

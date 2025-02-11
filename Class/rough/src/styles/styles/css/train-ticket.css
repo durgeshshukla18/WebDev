@@ -1,0 +1,11 @@
+dl{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    font-weight: bold;
+}
+div{
+    background-color: lightgray;
+}
+button{
+    display: none;
+}

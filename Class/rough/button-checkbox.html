@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button on Checkbox</title>
+    <style>
+        .terms{
+            color: red;
+        }
+        input:checked+span{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Terms & Condition</dt>
+        <dd>
+            <textarea cols="40" disabled rows="5"></textarea>
+        </dd>
+        <dd>
+            <input type="checkbox" class="terms"><span> I Accept</span>
+            <br><br>
+            <button class="btn btn-primary" disabled>Submit</button>
+        </dd>
+    </dl>
+</body>
+</html>

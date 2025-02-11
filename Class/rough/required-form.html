@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Form</title>
+    <style>
+        input:required+span{
+            display: inline;
+            color: red;
+        }
+        input:optional+span{
+            display: none;
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        input{
+            border: 1px solid black;
+        }
+        input:valid{
+            border: 2px solid green;
+        }
+
+        input:valid~div{
+            display: none;
+        }
+        input:invalid~div{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="txtUserName" required><span>*</span>
+                <div>
+                    Username is required.
+                </div>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                <input type="password" name="txtPwd" required><span>*</span>
+                <div>
+                    Password is required.
+                </div>
+            </dd>
+            <dt>Age</dt>
+            <dd>
+                <input type="text" name="txtUserAge"><span>*</span>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

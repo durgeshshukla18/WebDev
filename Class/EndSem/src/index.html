@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .header-top{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .header-top-right span{
+            margin: 10px;
+        }
+        .header-top-left span{
+            margin: 10px;
+        }
+        .header-bottom{
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+        }
+        .header-bottom-right{
+            margin: 15px;
+        }
+        .header-bottom-right span{
+            margin: 15px;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .bi-cart-fill{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .first-content{
+            background-image: url(../public/images/amazon_banner.jpg);
+            height: 250px;
+            margin: 10px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .body-button{
+            height: 50px;
+            width: 160px;
+            background-color: orangered;
+            color: white;
+            align-items: center;
+        }
+        .mid-head{
+            text-align: center;
+        }
+        .second-content{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .product-name{
+            font-size: 18px;
+            color: gray;
+            margin: 5px;
+        }
+        .product-price{
+            font-size: 20px;
+            margin: 5px;
+        }
+        .card-footer{
+            font-size: 15px;
+            color: orangered;
+            margin: 5px;
+        }
+        .third-content{
+            display: flex;
+            justify-content: space-around;
+            /* display: grid;
+            grid-template-columns: 6fr 6fr; */
+            /* margin-left: 60px;
+            margin-right: 50px; */
+            margin: 10px;
+        }
+        .about-button{
+            height: 40px;
+            width: 120px;
+            align-items: center;
+            background-color: white;
+        }
+        .about-desc{
+            width: 400px;
+            align-items: center;
+        }
+        .fourth-content{
+            background-color: pink;
+            width: 750px;
+            margin-left: 250px;
+            /* margin-right: 100px; */
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .reviews{
+            display: grid;
+            /* justify-content: space-around; */
+            grid-template-columns: 6fr 6fr;
+        }
+        .review-cards{
+            background-color: white;
+            margin: 15px;
+            padding: 15px;
+            /* align-items: center; */
+            text-align: center;
+        }
+        .review-card-header img{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* margin-left: 45%; */
+        }
+        .review-card-footer{
+            color: orangered;
+            text-align: center;
+        }
+        .footer{
+            height: 350px;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            padding-top: 120px;
+            margin: 20px;
+        }
+        .footer-desc{
+            margin: 10px;
+            font-size: larger;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+        .input form input{
+            height: 40px;
+            width: 400px;
+        }
+        .input form{
+            display: flex;
+            flex-direction: column;
+            margin-left: 450px;
+        }
+        .input form button{
+            height: 30px;
+            width: 80px;
+            margin-left: 180px;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <span>+48 789 456 123</span>
+                <span>contact@ssurfers.com</span>
+            </div>
+            <div class="header-top-right">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-pinterest"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-linkedin"></span>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="logo">SSURFERS</div>
+            <div class="header-bottom-right">
+                <span>Home</span>
+                <span>Products</span>
+                <span>Blog</span>
+                <span>About us</span>
+                <span>Contact</span>
+                <span class="bi bi-cart-fill"></span>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <main>
+            <div class="first-content">
+                <h2>Choose a board for yourself</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt, dolores architecto consectetur ad et.</p>
+                <button class="body-button">CHECK OUR BOARDS</button>
+
+            </div> 
+
+            <h2 class="mid-head">Surfboards</h2>
+            <div class="second-content">
+                <div class="card">
+                    <div class="card-header"><img src="../public/images/image01.png" alt=""></div>
+                    <div class="card-body">
+                        <div class="product-name">Product 8</div>
+                        <div class="product-price">450,00 USD</div>
+                    </div>
+                    <div class="card-footer">Zobacz wiecej <span class="bi bi bi-arrow-right"></span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><img src="../public/images/image02.png" alt=""></div>
+                    <div class="card-body">
+                        <div class="product-name">Product 7</div>
+                        <div class="product-price">340,00 USD</div>
+                    </div>
+                    <div class="card-footer">Zobacz wiecej <span class="bi bi bi-arrow-right"></span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><img src="../public/images/image03.png" alt=""></div>
+                    <div class="card-body">
+                        <div class="product-name">Product 6</div>
+                        <div class="product-price">425,00 USD</div>
+                    </div>
+                    <div class="card-footer">Zobacz wiecej <span class="bi bi bi-arrow-right"></span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><img src="../public/images/image04.png" alt=""></div>
+                    <div class="card-body">
+                        <div class="product-name">Product 5</div>
+                        <div class="product-price">370,00 USD</div>
+                    </div>
+                    <div class="card-footer">Zobacz wiecej <span class="bi bi bi-arrow-right"></span></div>
+                </div>
+            </div>
+
+            <div class="third-content">
+                <div class="about-img">
+                    <img src="../public/images/aboutimage.png" alt="">
+                </div>
+                <div class="about-desc">
+                    <h2>Learn more about surfing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam sed odio quas iure dignissimos commodi assumenda repellat ducimus quia, harum similique? Quia dolor vero quaerat? Quam, aliquid minus. Recusandae repudiandae voluptatum laudantium. Impedit distinctio nulla a earum illo fugiat repellat eius. Corrupti illum illo ex saepe quidem quae soluta.</p>
+                    <button class="about-button">Read More</button>
+                </div>
+            </div>
+
+            <div class="fourth-content">
+                <h1>Customer reviews</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint voluptatibus facere ducimus enim laborum alias, iusto dolore repellendus assumenda eveniet. Dignissimos, dolorem in. Libero, inventore. Adipisci asperiores suscipit dolores quod.</p>
+                <div class="reviews">
+                    <div class="review-cards">
+                        <div class="review-card-header">
+                            <img src="../public/images/a1.jpg" alt="">
+                        </div>
+                        <div class="review-card-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, deserunt quaerat, assumenda exercitationem culpa alias quae earum similique mollitia asperiores minima officia, nostrum fugiat velit eligendi dignissimos distinctio veritatis hic.</p>
+
+                        </div>
+                        <div class="review-card-footer">@Julio_Diaz</div>
+                    </div>
+
+                    <div class="review-cards">
+                        <div class="review-card-header">
+                            <img src="../public/images/a2.jpg" alt="">
+                        </div>
+                        <div class="review-card-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, deserunt quaerat, assumenda exercitationem culpa alias quae earum similique mollitia asperiores minima officia, nostrum fugiat velit eligendi dignissimos distinctio veritatis hic.</p>
+
+                        </div>
+                        <div class="review-card-footer">@Lisa_Wright</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-desc">
+                    <h1>Sign up for the newsletter!</h1>
+                    <p>Sign up for the newsletter and receive free web design knowledge.</p>
+                </div>
+                <div class="input">
+                    <form action="">
+                        <input type="text" name="email" id="" placeholder="Your email">
+                        <button class="form-button">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

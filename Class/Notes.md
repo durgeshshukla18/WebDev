@@ -42,11 +42,9 @@ To markup the content on a browser, we need language called HTML.
 
 Ex.:
 
-
     <textarea>
         <p>Hello pw'ian</p>
     </textarea>
-
 
 Ouptut:
 ![Output:](image.png)
@@ -55,13 +53,9 @@ Ouptut:
 
 Ex.:
 
-
 Temperature25C 4500/-
 
-
-
 Temperature25&deg;C &#8377;4500/-
-
 
 ![alt text](image-1.png)
 
@@ -73,7 +67,6 @@ Arranging the elements of HTML in a hierarchial way to a present on a webpage is
 
 Skeletal Structre:
 
-
 <html>
     <!-- Document scope -->
     <head>
@@ -81,8 +74,8 @@ Skeletal Structre:
 
     <body>
     </body>
-</html>
 
+</html>
 
 The content presented in head section is mainly used for SEO and responsive design.
 
@@ -169,31 +162,26 @@ Padding is used to create space around an element's content, Inside
   1. Keep all the the content in one contaier
   2.
 
-  
   <body>
       <div>
           // Your content here
       </div>
   </body>
-  
 
   3. Body is the container here which would display the contents center with attributes
 
-  
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   }
-  
 
   Note:
 
   - justify-content
 
 - Figcaption element is used by searche engine to load the image as a search result for the end user.
-
 
 <figure>
         <div>
@@ -204,7 +192,6 @@ Padding is used to create space around an element's content, Inside
             Browser Image
         </figcaption>
     </figure>
-
 
 - Element designed for coding platforms
 
@@ -218,6 +205,7 @@ Padding is used to create space around an element's content, Inside
 
 - <pre> - It is used to preserve the whitespaces in particular container
 
+
 - &nbsp; - It is used to mark the spaces set by the user for any element
 
 #### Small Text and Big Text
@@ -229,11 +217,9 @@ Padding is used to create space around an element's content, Inside
 
 Syntax:
 
-
 <details>
     <summary>content</summary>
 </details>
-
 
 #### Details and summary
 
@@ -243,7 +229,6 @@ Syntax:
 
 ## Data List with Terms and definitions:
 
-
 <dl>
     <dt>Term</dt>
     <dd>Definition</dd>
@@ -252,7 +237,6 @@ Syntax:
     <dd>Definition</dD>
 </dl>
 
-
 Note:
 
 - <dt> and <dd> will have some default alignment, so it is easy for presentation.
@@ -260,23 +244,19 @@ Note:
 
 Note:
 
-
 dt {
-     position: sticky;
-     top: 0;
+position: sticky;
+top: 0;
 }
-
 
 NOte:
 In Css we can set shadow to any container by using box-shadow attribute.
 
 - Box shadow will have 4 values
 
-
 {
-    box-shadow: horizontal vertical blur color;
+box-shadow: horizontal vertical blur color;
 }
-
 
 ## Heading elements in HTML
 
@@ -293,13 +273,11 @@ Ans :
 
 > Through css we can change the default behaviour.
 
-
 h1 {
-    font-size: 50px;
-    font-weight: lighter;
-    color: blue;
+font-size: 50px;
+font-weight: lighter;
+color: blue;
 }
-
 
 Q. 4 Can we remove the default style defined for heading?
 
@@ -307,28 +285,28 @@ Ans:
 
 > Yes it can be made possible with the help of css Inheritence.
 
-
 h1 {
-    text-align: center;
-    display: unset;
-    font-size: unset;
-    font-weight: unset;
+text-align: center;
+display: unset;
+font-size: unset;
+font-weight: unset;
 }
 
 h2 {
-    all: unset;
+all: unset;
 }
 
-
 ## Working with paragraphs
+
 1. <p></p> - To present the content in the form of paragraph we use <p> element.
+
 - It supports "align" attribute, which can set text left, center, right or justified.
 - paragraphs will have a line break before and after.
 
 2. `<blockquote></blockquote> ` - It is used to present summary of content in. By default the behaviour would have left right indentation and some margin bvalue for blockquote.
 
 Q. How to set the first-line indent for paragraph or blockquote?
-using css attribute text-indent: __px
+using css attribute text-indent: \_\_px
 
 Q. how to set line space, word space, character space in a paragraph
 
@@ -336,31 +314,30 @@ Using CSS attributes line-height:, word-spacing:, letter-spacing:.
 
 Ex.:
 
-
 blockquote {
-    text-indent: 50px;
-    line-height: 30px;
-    word-spacing: 7px;
-    letter-spacing: 3px;
+text-indent: 50px;
+line-height: 30px;
+word-spacing: 7px;
+letter-spacing: 3px;
 }
-
 
 Q. How to set dropcap?
 
 - By using the following style we can set dropcap:
-    - Access the first letter using the class : first-letter
-    - After accessing the firstletter apply fonts[size, weight, family]
-    - Apply css float
 
+  - Access the first letter using the class : first-letter
+  - After accessing the firstletter apply fonts[size, weight, family]
+  - Apply css float
 
 - Difference between display: grid; vs column: ; of a css attribute
 
-    1. display: grid; would display the content column wise in the given frame width(column ratio).
-    2. columns:; this attribute take number of columns as the input and display the content in continuous
+  1. display: grid; would display the content column wise in the given frame width(column ratio).
+  2. columns:; this attribute take number of columns as the input and display the content in continuous
 
 ## Text Formatting In HTML
+
 - We can change the text formatting using font
-font: we can change the face (family), size and color.
+  font: we can change the face (family), size and color.
 
 face - font family
 
@@ -373,22 +350,19 @@ size - 1 to 7 (increasing order)
 
 - HTML attribute for style
 
-
-    |Tag|Design Team| Review Team|Output|
-    |----|------|-------|-------|
-    |Bold|<b> |<strong>|<b>Bold</b>|
-    |Italic|<i>|<em>|<i>Italic</i>|
-    |Underline|<u>|<ins>|<u>Underline</u>|
-    |To strike down|<strike>|<del>| <del>Strike</del>|
+  | Tag            | Design Team | Review Team | Output            |
+  | -------------- | ----------- | ----------- | ----------------- |
+  | Bold           | <b>         | <strong>    | <b>Bold</b>       |
+  | Italic         | <i>         | <em>        | <i>Italic</i>     |
+  | Underline      | <u>         | <ins>       | <u>Underline</u>  |
+  | To strike down | <strike>    | <del>       | <del>Strike</del> |
 
 - What are web safe fonts:
 
 > These fonts are such fonts which would be available in every machine and it can't be deleted .
 
-
 Ex: sans-serif, mono space, serriff
 
-     
 ## Ordered And undorderd List
 
 - Order list will add auto numbering for a list of option, which can update automatically when your add or delete items.
@@ -397,12 +371,10 @@ Ex: sans-serif, mono space, serriff
 
 Syntax:
 
-
 <ol>
     <li>Itme-1</li>
     <li>Itme-2</li>
 <ol>
-
 
 Note : Default numbering will be given for items
 
@@ -411,7 +383,6 @@ type : It specified the numbering type, which can be: a, A, i, I, 1(default)
 start[number] - It defines the numbering level to start with.
 
 ## Nesting in list elements
-
 
 Bad Code
 
@@ -427,7 +398,7 @@ Bad Code
             <li>Node JS</li>
             <li>MongoDB</li>
         </ol>
-    
+
 </ol>
 
 ![Output](./src/list.png)
@@ -451,45 +422,40 @@ Good Code
 
 </ol>
 
-
 ![Output](./src/list.png)
 
 Questions:
+
 1. How to remove numbering in orderlist?
 
-    Ans 
-    > It is possible to remove numbering of ordered list element throught a css attribute called list-style: none;
+   Ans
+
+   > It is possible to remove numbering of ordered list element throught a css attribute called list-style: none;
 
 2. How to create scrollable list?
-    Ans
-    > Keep a Border, Keep a proper width and height as per the content area. Using an css attribute overflow: hidden | scroll | auto.
-    
+   Ans
+
+   > Keep a Border, Keep a proper width and height as per the content area. Using an css attribute overflow: hidden | scroll | auto.
 
 3. How to display list items inline?
-    
 4. How to display li in columnss wise?
 
-
-    i. 
+   i.
 
 ol {
-    display : grid;
-    grid-template-columns: 6fr 6fr;
+display : grid;
+grid-template-columns: 6fr 6fr;
 }
- 
-
-
 
 ol {
-    columns: 2;
+columns: 2;
 }
 
 5. How to change the options in ordered list?
 
-
 ## Unordered List
-Syntax:
 
+Syntax:
 
 <ul type = "square">
     <li>Web Server</li>
@@ -497,15 +463,13 @@ Syntax:
     <li>Web Page</li>
 </ul>
 
-
 How to set up custom bullets?
 
-Ans:  We can do by using list-style-image:; attribute of css.
+Ans: We can do by using list-style-image:; attribute of css.
 
 ## Pagination
 
--- It refers to the process of displaying the records by splitting them into <u>pages</u>.  
-
+-- It refers to the process of displaying the records by splitting them into <u>pages</u>.
 
 <ul>
     <li><span>&laquo;</span></li>
@@ -518,7 +482,6 @@ Ans:  We can do by using list-style-image:; attribute of css.
     <li><span&raquo;</span></li>
 </ul>
 
-
 We can use only those images from google which are filtered using : Creative common licenses. So that our website we don't get copyright.
 
 from -> tools
@@ -527,18 +490,17 @@ from -> tools
 
 > Different types of images:
 
-|Sr Number| Abbreviation| FileFormat| MIMEType| FileExtension|
-|---------|-------------|-----------|--------|--------------|
-|1.|APNG | Animated Portable Network Graphics| image/png| .apng|
-|2. |BMP| Bitmap File| image/bmp| .bmp|
-|3. |GIF| Graphics Interchange Formage| image/gif| .gif|
-|4. | ICO| Microsoft Icon| image/x-icon| .ico, .cur|
-|5. | JPEG| Joint Phototgraphic Expert Group| image/jpeg| .jpg. jpeg, .jtif, .pjpeg, .pjp|
-|6. | PNG| Portable Network Graphics| image/png| .png|
-|7. |SVG| Scalar Vector Graphics| image/svg+xml| .svg|
-|8. |TIFF| Tagged Image File Format|image/tiff|.tiff, .tif|
-|9. | WEBP| Web Picture Format| image/webp|.webp|
-
+| Sr Number | Abbreviation | FileFormat                         | MIMEType      | FileExtension                   |
+| --------- | ------------ | ---------------------------------- | ------------- | ------------------------------- |
+| 1.        | APNG         | Animated Portable Network Graphics | image/png     | .apng                           |
+| 2.        | BMP          | Bitmap File                        | image/bmp     | .bmp                            |
+| 3.        | GIF          | Graphics Interchange Formage       | image/gif     | .gif                            |
+| 4.        | ICO          | Microsoft Icon                     | image/x-icon  | .ico, .cur                      |
+| 5.        | JPEG         | Joint Phototgraphic Expert Group   | image/jpeg    | .jpg. jpeg, .jtif, .pjpeg, .pjp |
+| 6.        | PNG          | Portable Network Graphics          | image/png     | .png                            |
+| 7.        | SVG          | Scalar Vector Graphics             | image/svg+xml | .svg                            |
+| 8.        | TIFF         | Tagged Image File Format           | image/tiff    | .tiff, .tif                     |
+| 9.        | WEBP         | Web Picture Format                 | image/webp    | .webp                           |
 
 Q. What is MIME Type ?
 
@@ -550,32 +512,30 @@ Q. What is MIME Type ?
 
 Purpose of different types of images:
 
-|Type| Purpose|
-|--|--| 
-|PNG| High resolution(More space), Suitable for downloads|
-|JPG| Compressed Image Format(Less Space) , Good for on screen presentation|
-|GIF| Low Resolution, used for animations|
-|SVG| Ex. : 1. Google Map, 2. Bootstrap Icons,  not pixel based, high zoom quality|
-|WEBP|If we try to save an image it saves the entire page. Image alone can't be captured |
+| Type | Purpose                                                                            |
+| ---- | ---------------------------------------------------------------------------------- |
+| PNG  | High resolution(More space), Suitable for downloads                                |
+| JPG  | Compressed Image Format(Less Space) , Good for on screen presentation              |
+| GIF  | Low Resolution, used for animations                                                |
+| SVG  | Ex. : 1. Google Map, 2. Bootstrap Icons, not pixel based, high zoom quality        |
+| WEBP | If we try to save an image it saves the entire page. Image alone can't be captured |
 
 Embedding an image in webpage:
 
 - It is a void element
 - <img> is configure with following attributes
-<img src = "" alt = "" width = "" height = "" >
+  <img src = "" alt = "" width = "" height = "" >
 
 Ex 1:
-
 
 <figure>
         <img src="./image.png" alt="can't display" title="iphone" height="100" width="100">
         <figcaption>IPHONE</figcaption>
     </figure>
 
+Card
 
-Card 
-
-Standard Card Templated - 
+Standard Card Templated -
 
 <div style = "border: 1px solid white">
 <h2 align="center" style = "border: 1px solid white">Card Header</h2>
@@ -589,7 +549,6 @@ Card Footer
 </div>
 </div>
 
-
 <hr>
 
 ![alt text](image-1.png)
@@ -597,4 +556,3 @@ Card Footer
 ### What are fluid images?
 
 - If we set the width and height of an image in percentage then the image will be adjusted to the browser window. If the image is adjusted to browser window through percentage then such images are termed as fluid images
-
